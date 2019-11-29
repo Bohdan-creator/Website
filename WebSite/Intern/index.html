@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <link type="text/css" href="style.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css"
+    href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img src="avatar.png" style="width:50%;" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="name"><b>Username</b></label><br>
+        <input id="username" type="text" placeholder="Enter Username" name="name" required><br><br>
+
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+        <button class="submit" type="submit">Login</button>
+        <input id="check" type="checkbox">
+        <label>Remember</label>
+      </div>
+      <div class="container_footer" >
+        <button id="cansel" type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </form>
+  </div>
+
+
+
+
+
+
+  <div class="wrap" id="ltop">
+    <div id="slider">
+      <div class="slide slide1">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="slide slide2">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="slide slide3">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="hero-image">
+
+
+
+
+        <div class="links_all" id="hide">
+
+          <div class="links_hide">
+          <ul class="links">
+            <li><a id="effect" class="travel_mouse" href="#lprice">Price List</a></li>
+            <li><a id="effect" class="white" href="#labout">About</a></li>
+
+            <li> <a class="login-a" id="log" href="#" onclick="document.getElementById('id01').style.display='block'
+               ">Login</a></li>
+          </ul>
+</div>
+
+        </div>
+
+
+        <div class="hero-text">
+          <h1>Welcome</h1>
+          <p>And I'm an assistant</p>
+          <a id="offers" href="#lblock2">See what I can offer</a>
+        </div>
+      </div>
+      <div class="travel_offer_wrapper">
+        <div id="travel_offer" name="services">
+          <div class="method_show_row_1" id="Paris">
+            <div class="container" id="lblock2">
+              <h2 class="title">Paris</h2>
+              <img class="image" id="Paris_img" src="Paris.jpg">
+              <p class="descr">We can offer you a beatiful travel to Paris<br>
+                and incrediable emotions:
+              </p>
+              <ul class="paris_offer">
+                <li>Eiffel tower</li>
+                <li>Taste a delicious baggets</li>
+                <li>...</li>
+              </ul>
+              <div class="container_read">
+
+                <a class="read_1" id="read">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="method_show_row_2">
+            <div class="container_two">
+              <h2 class="title">New York</h2>
+              <img class="image" src="york.jpg">
+              <p class="descr">We can offer you a beatiful travel to New York<br>
+                and incrediable emotions:
+              </p>
+              <div class=hide>
+                <ul class="york">
+                  <li>Big Ben</li>
+                  <li>Taste a delicious burgers</li>
+                  <li>Luxury hotel</li>
+                  <li>...</li>
+                </ul>
+              </div>
+              <div class="container_read">
+                <a class="read_2" id="read">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="method_show_row_3">
+
+            <div class="container_three">
+
+              <h2 class="title">Vena</h2>
+              <img class="image" src="viena.jpg">
+              <p class="descr" id="descr_v">We can offer you a beatiful travel to Viena<br>
+                and incrediable emotions:
+              </p>
+              <ul id="vena_desc" class="vena_desc">
+                <li>One of the best ZOO</li>
+                <li>Galery Albertina</li>
+                <li>Wiener Prater</li>
+                <li>...</li>
+              </ul>
+              <div class="container_read">
+                <a class="read_3" id="read" id="See">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div id="hide_while_1">
+            <div class="container_four">
+              <h3 class="title">Croatia</h3>
+              <img class="image" src="croatia.jpg">
+              <p class="descr" id="descr_v">We can offer you a beatiful travel to Croatia<br>
+                and incrediable motions:
+              </p>
+              <ul id="vena_desc" class="croatia_desc_1">
+                <li>One of the best ZOO</li>
+                <li>Galery Albertina</li>
+                <li>Wiener Prater</li>
+                <li>...</li>
+              </ul>
+              <div class="container_read">
+
+                <a class="read_4" id="read" id="See" name="See">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div id="hide_while_2">
+
+
+            <div class="container_five">
+              <h3 class="title">Montenegro</h3>
+              <img class="image" src="montenegro.jpg">
+              <p class="descr" id="descr_v">We can offer you a beatiful travel to Montenegro<br>
+                and incrediable emotions:
+              </p>
+              <ul id="vena_desc" class="monte_desc_1">
+                <li>One of the best ZOO</li>
+                <li>Galery Albertina</li>
+                <li>Wiener Prater</li>
+                <li>...</li>
+              </ul>
+              <div class="container_read">
+                <a class="read_5" id="read" id="See" name="See">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div id="hide_while_3">
+
+            <div class="container_six">
+              <h3 class="title">Germany</h3>
+              <img class="image" src="Berlin.jpg">
+              <p class="descr">We can offer you a beatiful travel to Berlin<br>
+                and incrediable emotions:
+              </p>
+              <ul id="vena_desc" class="berlin_desc_1">
+                <li>One of the best ZOO</li>
+                <li>Galery Albertina</li>
+                <li>Wiener Prater</li>
+                <li>...</li>
+              </ul>
+              <div class="container_read">
+                <a class="read_6" id="read" name="See">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Price">
+
+      <p>
+        Price Lists
+      </p>
+    </div>
+
+
+
+
+    <div class="Price_List" id="lprice">
+      <table id="example">
+        <thead>
+          <tr>
+            <th>Countries</th>
+            <th>Weeks</th>
+            <th>Hotel</th>
+            <th>Rating</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>France</td>
+            <td>1 week</td>
+            <td>Saint-Quentin</td>
+            <td><span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+            </td>
+            <td>100$/one night</td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td>1 week</td>
+            <td>Germany Hotel</td>
+            <td><span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+            </td>
+            <td>80$/one night</td>
+          </tr>
+          <tr>
+            <td>Croatia</td>
+            <td>1 week</td>
+            <td>Cavtat</td>
+            <td><span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+            </td>
+            <td>150$/one night</td>
+          </tr>
+          <tr>
+            <td>Montenegro</td>
+            <td>1 week</td>
+            <td>Mirage</td>
+            <td><span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+            </td>
+            <td>135$/one night</td>
+          </tr>
+          <tr>
+            <td>Egypt</td>
+            <td>1 week</td>
+            <td>Rixos Sharm EI</td>
+            <td><span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+            </td>
+            <td>100$/ one night</td>
+          </tr>
+          <tr>
+            <td>Bulgaria</td>
+            <td>1 week</td>
+            <td>Aphrodite</td>
+            <td><span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star" id="half"></span>
+              <span class="fa fa-star" id="half"></span>
+
+            </td>
+            <td>125$/one night</td>
+          </tr>
+          <tr>
+            <td>Finladia</td>
+            <td>1 week</td>
+            <td>Lapland</td>
+            <td><span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+            </td>
+            <td>200$/one night</td>
+          </tr>
+          <tr>
+            <td>Poland</td>
+            <td>1 week</td>
+            <td>Mercury</td>
+            <td><span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star" id="half"></span>
+              <span class="fa fa-star" id="half"></span>
+
+            <td>200$/one night</td>
+          </tr>
+
+
+        </tbody>
+
+      </table>
+    </div>
+    <div class="About">
+
+      <h6 class="contact" id="labout">Contacts</h6>
+      <p class="email">Please contact with us : infotour@gmail.com</p>
+      <p class="email">Read about : infotour@gmail.com</p>
+      <div class="dest">
+        <a href="#ltop" class="top_one">&#8657</a>
+
+      </div>
+
+
+
+
+    </div>
+
+    <!--<div class="copyright" id="copy">
+     <a id = "copytop"href="#copyright">&copy Bohdan Kucher 2019</a>
+  <div class="right">
+     <a href="#Terms">Travel</a>
+     </div>
+     <div class="right1">
+     <a href="#About us">About us</a>
+     </div>
+    
+   </div>-->
+
+    <div class="foot">
+      <a class="cp">&copyCopyright Bohdan Kucher</a>
+      <a class="tr">Terms</a>
+      <a class="tr">About us</a>
+    </div>
+
+
+</body>
+
+<script src="jq.js"></script>
+<script src="script.js"></script>
+
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" charset="utf8"
+  src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+</html>
